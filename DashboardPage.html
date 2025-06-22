@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard Page</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+
+</head>
+
+  <body>
+       
+  <ul>
+    <img src="logo.png" style="height: auto; width: 100%;">
+    <li><a href="#dash"><img src="dash.png"class="icon">Dashboard </a></li>
+    <li><a href="#notifs"><img src="notification.png"class="icon">Notifications</a></li>
+    <div class="last">
+      <li> <button class="logout-button" onclick="openLogoutPrompt()">Log Out</button>
+        </li>
+    </div>
+  </ul>
+
+  <div id="logout-modal" class="prompt">
+    <div class="prompt-content">
+        <h1>Confirm Logout</h1>
+        <p>Are you sure you want to logout? You will be redirected to the home page.</p>
+        <div class="prompt-buttons">
+            <button class="confirm-button" onclick="confirmLogout()">Yes, Logout</button>
+            <button class="cancel-button" onclick="closeLogoutPrompt()">Cancel</button>
+        </div>
+    </div>
+</div>
+  <script>
+    function openLogoutPrompt() {
+        document.getElementById('logout-modal').style.display = 'flex';
+    }
+
+    function closeLogoutPrompt() {
+        document.getElementById('logout-modal').style.display = 'none';
+    }
+
+    function confirmLogout() {
+        
+        window.location.href = 'farmstorage.html';
+    }
+</script>
+
+
+<div class="container">
+  <section id="dash">
+  <h2 class="date">Saturday, August 31 2024 </h2>
+  <div class="wrapper">
+   <div class="media">
+    <img src="laptop2.png">
+    </div>
+    <img src="farm.png" class="farm">
+    <div class="text">
+    <h1> Welcome to your <div class="effect"><h1>dashboard!</h1></div></h1>
+    <br>
+    <h2> What would you like to do today?</h2>
+    </div>
+  </div>
+
+  <h1 class="overview"> Overview </h1>
+  <div class="wrapper2">
+    <a href="producestored.html"> Produce Stored</a> 
+    <h2 style="margin-top: 3%;"> Review the state of your produce</h2>
+    <img src="produce.png">
+    
+  </div>
+
+  <div class="wrapper3">
+    <a href="cropsstored.html"> Crops Stored</a>
+    <h2 style="margin-top: 3%;"> Review the state of your crops</h2>
+    <img src="crop.png">
+  </div>
+
+  <div class="wrapper4">
+    <img src="user.png" class="user">
+    <h2 class="n"> [Name] </h2>
+    <h2 class="cno"> [Contact Number]</h2>
+  </div>
+
+  <div class="wrapper5">
+    <h1> Storage time of items expires in:</h1>
+    <h2> 7 days [September 7 2024]</h2>
+  </div>
+
+  <div class="wrapper6">
+    <h1> Fact of the Day</h1>
+    <h2> India is globally competitive in agriculture, ranking 9<sup>th</sup> in agricultural exports and 19<sup>th</sup> in merchandise exports!</h2>
+  </div>
+
+  <div class="wrapper7">
+    <h1> You're currently an AgriStorage Member! </h1>
+    <h2> We promise to give your produce and crops high-quality treatment. <br> Thank you for joining us!</h2>
+    <img src="w7.png" class="w7">
+</div>
+
+
+    <h2 class="calendar-header">August 2024</h2>
+
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td class="today">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+
+  </section>
+  
+  <br>
+  <hr style="margin-top: 25%; color:dimgrey; width: 75%; margin-left: 25%;">
+
+  <section id="notifs">
+    <h1>Notifications</h1>
+    <p class="not"> Check for any general updates here!</p>
+    
+    <div class="notif">
+    
+      <div class="notification-item">
+          <h2>New Update Available</h2>
+          <p>We have released a new update for the dashboard. Check it out now!</p>
+          <span class="notification-date">August 25, 2024</span>
+      </div>
+
+      <div class="foryou">
+        <h2>Order received</h2>
+        <p>We have received your details for Crop Storage. Our personnel will update you shortly on the progress!</p>
+        <span class="notification-date">August 24, 2024</span>
+    </div>
+
+    <div class="foryou">
+      <h2>Order received</h2>
+      <p>We have received your details for Produce Storage. Our personnel will update you shortly on the progress!</p>
+      <span class="notification-date">August 24, 2024</span>
+  </div>
+
+  <div class="notification-item">
+    <h2>System Maintenance</h2>
+    <p>The server will be undergoing maintenance on September 1, 2024. The website cannot be accessed from 12:00 to 16:00 IST.</p>
+    <span class="notification-date">August 20, 2024</span>
+</div>
+
+<div class="notification-item">
+  <h2>You're now an AgriStorage member!</h2>
+  <p>Thank you for joining us!</p>
+  <span class="notification-date">August 15, 2024</span>
+</div>
+      </div>
+
+  </section>
+  
+ 
+  
+  </div>
+
+  </body>
+  </html>
+  

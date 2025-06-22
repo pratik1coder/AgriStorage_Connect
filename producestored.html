@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Produce Stored</title>
+    <link rel="stylesheet" href="producestyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+</head>
+
+  <body>
+  <div class="content">
+    
+    
+  <ul>
+    <img src="logo.png" style="height: auto; width: 100%;">
+    <li><a href="DashboardPage.html"><img src="dash.png"class="icon">Dashboard </a></li>
+    <li><a href="DashboardPage.html#notifs"><img src="notification.png"class="icon">Notifications</a></li>
+    <div class="last">
+      <li> <button class="logout-button" onclick="openLogoutPrompt()">Log Out</button>
+        </li>
+    </div>
+  </ul>
+
+  <div id="logout-modal" class="prompt">
+    <div class="prompt-content">
+        <h1>Confirm Logout</h1>
+        <p>Are you sure you want to logout? You will be redirected to the login page.</p>
+        <div class="prompt-buttons">
+            <button class="confirm-button" onclick="confirmLogout()">Yes, Logout</button>
+            <button class="cancel-button" onclick="closeLogoutPrompt()">Cancel</button>
+        </div>
+    </div>
+</div>
+  <script>
+    function openLogoutPrompt() {
+        document.getElementById('logout-modal').style.display = 'flex';
+    }
+
+    function closeLogoutPrompt() {
+        document.getElementById('logout-modal').style.display = 'none';
+    }
+
+    function confirmLogout() {
+        
+        window.location.href = 'login.html';
+    }
+</script>
+
+<div class="container">
+<h1> Here's the information on your produce: </h1>
+<br>
+<table>
+    <tr>
+      <th>Produce Type</th>
+      <th>Storage Method</th>
+      <th>Temperature</th>
+      <th> Condition</th>
+    </tr>
+    <tr>
+      <td>Cabbage</td>
+      <td>Ventilation Container</td>
+      <td>23°C</td>
+      <td> Good</td>
+    </tr>
+    <tr>
+        <td>Onion</td>
+        <td>Ventilation Container</td>
+        <td>13°C</td>
+        <td> Good</td>
+      </tr>
+      <tr>
+        <td>Pumpkin</td>
+        <td>Moisture Container</td>
+        <td>17°C</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td>Carrot</td>
+        <td>Cold Storage (High Humidity)</td>
+        <td>2°C</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>Earthen Cellar</td>
+        <td>0°C</td>
+        <td>Moderate</td>
+      </tr>
+      
+  </table>
+  <br>
+  <img src="vegetable.png">
+  <canvas id="myChart" style="width:100%;max-width:600px; margin-top: 10%;"></canvas>
+
+<script>
+const xValues = ["Cabbage", "Onion", "Pumpkin", "Carrot", "Apple"];
+const yValues = [5,6,3,4,2];
+const barColors = ["#2d6a4f","#52b788","#395d5b2","#b7e4c7","#184e77"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Quantity of Crops Stored (in kilograms)"
+    }
+  }
+});
+</script>
+    
+
+    
+
+<div class="c2">
+   
+        <img src="planning.png" >
+        <h1>Need More Information?</h1>
+        <br>
+        <a href="farmstorage.html#connect with us">Contact Us</a>
+        <p style="font-weight: bold; margin-top: 3%;">If you have any questions or need assistance, feel free to reach out to our support team.</p>
+
+  </div>
+  <br>
+  <a href="DashboardPage.html" class="back"> Back </a>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
