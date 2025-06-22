@@ -1,29 +1,8 @@
-# Welcome to Hackerwar 5.0 | CODEX
+#A digital platform dedicated to revolutionize the agricultural sector in India, by connecting farmers to a vast range of storage facilities for the specific needs of every grain and crop.
 
-## 📢 Hackathon Guidelines for All Teams
+#Our website aims to reach every farmer of India with ease, which is why AgriStorage Connect is available in 12 Indian languages.
 
-Hey everyone! As we dive into the hackathon, please keep the following guidelines in mind:
-
-<b>Team Leaders:</b> Please ensure you mention the following in your team's text channel:
-```
-Problem Statement (PS) Number
-PS Link
-Brief Description of your project
-Upload your PPT
-```
-<ul>
-<li>
-  Teams should push their code into their respective repositories (GitHub) every <b>2 hours</b> during the event.
-</li>
-<li>
-   Teams are not allowed to work on a project before the event and open-source it solely for the purpose of using the code during the event.
-</li>
-</ul>
-
-Let's keep things smooth and have an amazing hackathon! Good luck! 🚀
-
-Generated Using GitBulk-Hackerwar by 
-<a href="https://www.github.com/whysosaket">
-whysosaket
-</a>
- ❤💫 
+#AgriStorage provides various attractive features which make our website functional and easy to use:-
+● Single-page website with multiple sections for simple navigation.
+● Form for assessing the needs of farmers’ items.
+● Dashboard with statistics catering to each individual farmer’s data, as well as updates regarding the site and farmer’s items.
